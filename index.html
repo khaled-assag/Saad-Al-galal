@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فني كهرباء منازل - سعد الجلال</title>
+    <!-- Favicon الأساسي -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+            <!-- للشاشات المختلفة -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- أيقونة الفني -->
+    <div class="technician-icon" id="technicianIcon">
+        <img src="images/technician.png" alt="فني كهرباء">
+    </div>
+
+    <!-- نافذة الفني المنبثقة - النسخة المحسنة -->
+<div class="technician-modal" id="technicianModal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <img src="images/technician-large.png" alt="سعد الجلال">
+        <h3>سعد الجلال</h3>
+        <p><i class="fas fa-briefcase"></i> خبرة: 10 سنوات في مجال الكهرباء المنزلية</p>
+        <p><i class="fas fa-certificate"></i> شهادة معتمدة من الهيئة السعودية للكهرباء</p>
+        <p><i class="fas fa-id-card"></i> ترخيص مزاولة المهنة: 123456</p>
+        <div class="modal-buttons">
+            <a href="tel:966557077812" class="btn call-btn"><i class="fas fa-phone"></i> اتصل الآن</a>
+            <a href="https://wa.me/966557077812" class="btn whatsapp-btn"><i class="fab fa-whatsapp"></i> واتساب</a>
+        </div>
+    </div>
+</div>
+
+    <!-- أزرار عائمة -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/966557077812" class="floating-button whatsapp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:966557077812" class="floating-button call">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo"> م.سعد الجلال</a>
+            <div class="menu-toggle" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-list" id="navList">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#about">من نحن</a></li>
+                <li><a href="#services">الخدمات</a></li>
+                <li><a href="#gallery">معرض الأعمال</a></li>
+                <li><a href="#testimonials">آراء العملاء</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- الصفحة الرئيسية -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>هل تواجه أعطال كهربائية في منزلك؟</h1>
+            <h2>نصل إليك في أقل من ساعة!</h2>
+            <p class="subtitle">خدمة موثوقة، بأسعار مناسبة، في جميع أنحاء المدينة</p>
+            <div class="cta-buttons">
+                <a href="https://wa.me/966557077812" class="btn whatsapp-btn"><i class="fab fa-whatsapp"></i> احجز عبر واتساب</a>
+                <a href="tel:966557077812" class="btn call-btn"><i class="fas fa-phone"></i> اتصل الآن</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- الخدمات السريعة -->
+    <section class="quick-services">
+        <div class="container">
+            <h2 class="section-title">خدماتنا الرئيسية</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-plug"></i>
+                    <h3>تركيب مفاتيح وأفياش</h3>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>كشف الأعطال المفاجئة</h3>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-wrench"></i>
+                    <h3>تمديد كهرباء</h3>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>تركيب إضاءة LED</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- من نحن -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">من نحن</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>كهربائي معتمد بخبرة 10 سنوات في إصلاح وتمديد الكهرباء للمنازل. نلتزم بالدقة، الأمان، والأسعار المناسبة.</p>
+                    <p>نقدم حلولاً سريعة وفعالة لأي مشكلة كهربائية تواجهها في منزلك، مع ضمان الجودة والسلامة في كل عمل نقوم به.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/about-electrician.jpg" alt="فني كهرباء">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الخدمات -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title">خدماتنا</h2>
+            <div class="services-container">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <div class="service-details">
+                        <h3>تركيب مفاتيح وأفياش</h3>
+                        <p>تركيب وتغيير جميع أنواع المفاتيح والأفياش بأحدث المواصفات ومعايير السلامة.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="service-details">
+                        <h3>كشف الأعطال المفاجئة</h3>
+                        <p>تشخيص سريع ودقيق لأي عطل كهربائي وإصلاحه في أسرع وقت ممكن.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <div class="service-details">
+                        <h3>تمديد كهرباء داخلي وخارجي</h3>
+                        <p>تنفيذ تمديدات كهربائية جديدة أو صيانة التمديدات القديمة باحترافية.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="service-details">
+                        <h3>تركيب إضاءة LED وسبوت لايت</h3>
+                        <p>تصميم وتنفيذ أنظمة إضاءة عصرية موفرة للطاقة.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="service-details">
+                        <h3>فحص شامل قبل شراء المنازل</h3>
+                        <p>فحص دقيق للتمديدات الكهربائية قبل شراء العقار لتجنب المشاكل المستقبلية.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- طلب خدمة -->
+    <section id="booking" class="booking-section">
+        <div class="container">
+            <h2 class="section-title">طلب خدمة</h2>
+            <div class="booking-options">
+                <div class="booking-form">
+                    <form id="serviceForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="الاسم الكامل" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="address" placeholder="العنوان" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="service" required>
+                                <option value="">اختر الخدمة المطلوبة</option>
+                                <option value="تركيب مفاتيح وأفياش">تركيب مفاتيح وأفياش</option>
+                                <option value="كشف الأعطال المفاجئة">كشف الأعطال المفاجئة</option>
+                                <option value="تمديد كهرباء">تمديد كهرباء</option>
+                                <option value="تركيب إضاءة">تركيب إضاءة</option>
+                                <option value="فحص منزل">فحص منزل</option>
+                                <option value="أخرى">أخرى</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="رقم الهاتف" required>
+                        </div>
+                        <button type="submit" class="btn submit-btn">إرسال الطلب</button>
+                    </form>
+                </div>
+                <div class="booking-direct">
+                    <h3>أو اتصل بنا مباشرة</h3>
+                    <a href="https://wa.me/966557077812" class="btn whatsapp-btn large"><i class="fab fa-whatsapp"></i> واتساب الآن</a>
+                    <a href="tel:966557077812" class="btn call-btn large"><i class="fas fa-phone"></i> اتصل الآن</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- آراء العملاء -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">آراء العملاء</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                    <p class="testimonial-text">"جاء بسرعة، حل المشكلة في دقائق – شكراً أستاذ سعد!"</p>
+                    <div class="client-info">
+                        <span class="client-name">أحمد السليم</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                    <p class="testimonial-text">"مصداقية ومهارة ممتازة، أنصح به لكل من يحتاج فني كهرباء محترف."</p>
+                    <div class="client-info">
+                        <span class="client-name">محمد العتيبي</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                    <p class="testimonial-text">"تعامل راقٍ وسعر معقول، وأعماله نظيفة ومحترفة."</p>
+                    <div class="client-info">
+                        <span class="client-name">فاطمة القحطاني</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- معرض الصور -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">معرض الأعمال</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/gallery1.jpg" alt="عمل كهربائي">
+                    <div class="gallery-overlay">
+                        <p>تركيب إضاءة LED</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery2.jpg" alt="عمل كهربائي">
+                    <div class="gallery-overlay">
+                        <p>تمديدات كهربائية</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery3.jpg" alt="عمل كهربائي">
+                    <div class="gallery-overlay">
+                        <p>تركيب أفياش</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery4.jpg" alt="عمل كهربائي">
+                    <div class="gallery-overlay">
+                        <p>تركيب إضاءة سبوت لايت مخفية</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- التواصل -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">تواصل معنا</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>966557077812</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <p><a href="https://wa.me/966557077812">واتساب: 966557077812</a></p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>أوقات العمل: من 9 صباحًا إلى 10 مساءً</p>
+                    </div>
+                    <div class="contact-buttons">
+                        <a href="https://wa.me/966557077812" class="btn whatsapp-btn"><i class="fab fa-whatsapp"></i> واتساب</a>
+                        <a href="tel:966557077812" class="btn call-btn"><i class="fas fa-phone"></i> اتصل</a>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3710.246682944369!2d39.2241304!3d21.576292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d16dd90b3917%3A0xed652d9c7be4809e!2z2YfZhdiz2KfYqiDZhNiz2KjYp9mD2Kkg2YjYp9mE2YPZh9ix2KjYp9ihINmI2KfZhNil2YTZg9iq2LHZiNmG2YrYp9iq!5e0!3m2!1sar!2s!4v1748899251308!5m2!1sar!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>سعد الجلال</h3>
+                    <p>فني كهرباء منازل معتمد</p>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#services">الخدمات</a></li>
+                        <li><a href="#gallery">معرض الأعمال</a></li>
+                        <li><a href="#contact">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>معلومات التواصل</h4>
+                    <p><i class="fas fa-phone"></i> 966557077812</p>
+                    <p><i class="fas fa-clock"></i> من 9 ص إلى 10 م</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+    <p>&copy; 2025 جميع الحقوق محفوظة | سعد الجلال - فني كهرباء منازل</p>
+    <div class="developer-info">
+        <span>تصميم وتطوير: المبرمج خالد عساج</span>
+        <div class="developer-links">
+            <a href="tel:00967776531185" class="developer-link"><i class="fas fa-phone"></i></a>
+            <a href="https://wa.me/967776531185" class="developer-link whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/khald.aljlal.2025" class="developer-link facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://github.com/khaled-assag" class="developer-link github"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+</div>
+            
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
