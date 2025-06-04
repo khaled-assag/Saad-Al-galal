@@ -19,6 +19,7 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 100%;
 }
 
 body {
@@ -48,6 +49,7 @@ ul {
 img {
     max-width: 100%;
     height: auto;
+    display: block;
 }
 
 .btn {
@@ -60,6 +62,7 @@ img {
     cursor: pointer;
     border: none;
     margin: 5px;
+    font-size: 1rem;
 }
 
 .btn:hover {
@@ -125,7 +128,10 @@ img {
     padding: 0 20px;
 }
 
-
+.navbar .container .logo {
+    padding: 0;
+    font-size: 1.5rem;
+}
 
 .logo {
     font-size: 1.5rem;
@@ -373,8 +379,15 @@ img {
     margin-bottom: 20px;
 }
 
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
 .form-group input,
-.form-group select {
+.form-group select,
+.form-group textarea {
     width: 100%;
     padding: 12px 15px;
     border: 1px solid #ddd;
@@ -385,7 +398,8 @@ img {
 }
 
 .form-group input:focus,
-.form-group select:focus {
+.form-group select:focus,
+.form-group textarea:focus {
     outline: none;
     border-color: var(--secondary-color);
     box-shadow: 0 0 0 2px rgba(62, 146, 204, 0.2);
@@ -691,16 +705,6 @@ img {
     background-color: #333;
 }
 
-@media (max-width: 768px) {
-    .footer-bottom {
-        flex-direction: column;
-    }
-    
-    .developer-info {
-        flex-direction: column;
-    }
-}
-
 /* أزرار عائمة */
 .floating-buttons {
     position: fixed;
@@ -944,8 +948,51 @@ img {
     }
 }
 
-/* التكيف مع الأجهزة المحمولة */
+/* ============================================= */
+/* تحسينات للهواتف الصغيرة والأجهزة اللوحية */
+/* ============================================= */
+
+/* شاشات متوسطة (أجهزة لوحية) */
+@media (max-width: 992px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .about-image {
+        order: -1;
+    }
+    
+    .booking-options {
+        flex-direction: column;
+    }
+    
+    .contact-content {
+        flex-direction: column;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+    }
+}
+
+/* شاشات صغيرة (هواتف كبيرة) */
 @media (max-width: 768px) {
+    html {
+        font-size: 95%;
+    }
+    
     .menu-toggle {
         display: flex;
     }
@@ -972,37 +1019,11 @@ img {
     .nav-list li {
         margin: 0 0 20px 0;
     }
-
-    .hero h1 {
-        font-size: 2rem;
+    
+    .navbar .container .logo {
+        font-size: 1.3rem;
     }
-
-    .hero h2 {
-        font-size: 1.5rem;
-    }
-
-    .section-title {
-        font-size: 1.8rem;
-    }
-
-    .about-content {
-        flex-direction: column;
-    }
-
-    .booking-options {
-        flex-direction: column;
-    }
-
-    .contact-content {
-        flex-direction: column;
-    }
-
-    .footer-content {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 480px) {
+    
     .hero {
         padding: 120px 0 80px;
     }
@@ -1012,17 +1033,105 @@ img {
     }
 
     .hero h2 {
+        font-size: 1.5rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    .service-card {
+        padding: 20px 15px;
+    }
+    
+    .service-card i {
+        font-size: 2.5rem;
+    }
+    
+    .service-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .service-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .service-icon {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+    
+    .testimonial-card {
+        padding: 20px;
+    }
+    
+    .modal-content {
+        padding: 30px 20px;
+    }
+    
+    .modal-content img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .modal-content h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* شاشات صغيرة جدًا (هواتف صغيرة) */
+@media (max-width: 576px) {
+    html {
+        font-size: 90%;
+    }
+    
+    .hero {
+        padding: 100px 0 60px;
+    }
+    
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero h2 {
         font-size: 1.3rem;
     }
-
+    
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+    
+    .section-title::after {
+        width: 60px;
+        height: 3px;
+        margin: 10px auto;
+    }
+    
     .cta-buttons {
         flex-direction: column;
+        gap: 10px;
     }
-
+    
     .btn {
         width: 100%;
+        margin: 3px 0;
     }
-
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
     .floating-buttons {
         bottom: 10px;
         left: 10px;
@@ -1044,5 +1153,62 @@ img {
     .technician-icon img {
         width: 30px;
         height: 30px;
+    }
+    
+    .modal-content {
+        padding: 25px 15px;
+    }
+    
+    .modal-content img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .modal-content h3 {
+        font-size: 1.3rem;
+    }
+    
+    .modal-content p {
+        font-size: 1rem;
+    }
+    
+    .modal-buttons .btn {
+        min-width: 100px;
+        padding: 10px;
+    }
+}
+
+/* شاشات صغيرة جدًا جدًا (هواتف قديمة) */
+@media (max-width: 400px) {
+    .hero h1 {
+        font-size: 1.4rem;
+    }
+
+    .hero h2 {
+        font-size: 1.1rem;
+    }
+    
+    .subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .section-title {
+        font-size: 1.3rem;
+    }
+    
+    .btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .large {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+    
+    .floating-button {
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
     }
 }
